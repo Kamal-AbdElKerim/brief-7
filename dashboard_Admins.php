@@ -1,5 +1,6 @@
 <?php 
-include 'layout/coon.php'; session_start();
+session_start();
+include 'layout/coon.php'; 
 
 if (  !empty($_SESSION["user"])) {  
   header("Location: index.php", true);  
@@ -112,7 +113,7 @@ body{
 </head>
 <body>
 
-<?php include 'Dashboard\layout_dashboard\navbar_dashboard.php' ?>
+<?php include 'Dashboard/layout_dashboard/navbar_dashboard.php' ?>
   <div class="page-dashboard" id="top">
 
 

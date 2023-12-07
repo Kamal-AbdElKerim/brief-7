@@ -1,7 +1,6 @@
-
-
 <?php 
-include 'layout/coon.php'; session_start();
+session_start();
+include 'layout/coon.php';
 
 $Users_result = $conn->query("SELECT * FROM `users` WHERE is_Active = 1 ORDER BY id DESC");
 $UsersData = $Users_result->fetchAll(PDO::FETCH_ASSOC);

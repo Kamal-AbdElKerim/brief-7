@@ -1,5 +1,6 @@
-<?php
-include 'layout/coon.php'; session_start();
+<?php 
+session_start();
+include 'layout/coon.php';
 
 if (isset($_GET['categories'])) {
     $categoryIDs = explode(',', $_GET['categories']);

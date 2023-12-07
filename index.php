@@ -1,7 +1,6 @@
-
 <?php 
-
-include 'layout/coon.php'; session_start();
+session_start();
+include 'layout/coon.php';
  ?>
 <?php
 

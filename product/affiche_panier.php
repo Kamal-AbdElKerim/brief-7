@@ -1,4 +1,7 @@
-<?php include '../layout/coon.php';session_start();
+<?php 
+session_start();
+include '../layout/coon.php';
+
 if ( empty($_SESSION["user"]) ) {  
   
     echo "no" ; 

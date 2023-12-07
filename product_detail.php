@@ -1,5 +1,6 @@
-<?php include 'layout/coon.php'; session_start();
-
+<?php 
+session_start();
+include 'layout/coon.php';
 
 if (isset($_GET['id'])) {
   $id = $_GET['id'];
