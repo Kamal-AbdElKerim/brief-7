@@ -1,5 +1,6 @@
-<?php
-include '../layout/coon.php';session_start();
+<?php 
+session_start();
+include '../layout/coon.php';
 
 // Validate data (you may want to add more validation)
 $requiredFields = ['name', 'prénom', 'email', 'password', 'adresse', 'phone', 'ville'];

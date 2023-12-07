@@ -1,5 +1,6 @@
-<?php
-include '../layout/coon.php';session_start(); // Include your database connection file
+<?php 
+session_start();
+include '../layout/coon.php';
 
 if (isset($_GET["op"]) && isset($_GET["id_product"]) && !empty($_SESSION["user"])) {
     $op = $_GET["op"];
