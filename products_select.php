@@ -1,6 +1,6 @@
 <?php
 // Include file for database connection
-include 'layout/coon.php';
+include 'layout/coon.php'; session_start();
 
 $sql = "SELECT * FROM `produit` WHERE deleted_at IS NULL";
 

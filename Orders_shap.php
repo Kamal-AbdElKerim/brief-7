@@ -1,7 +1,7 @@
 
 
 <?php 
-include 'layout/coon.php';
+include 'layout/coon.php'; session_start();
 
 $commande_result = $conn->query("SELECT * FROM `details_commande` WHERE confirm_achter = 1 ORDER BY details_id ASC ");
 $commandeData = $commande_result->fetchAll(PDO::FETCH_ASSOC);

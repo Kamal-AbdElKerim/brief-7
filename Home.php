@@ -1,7 +1,9 @@
 <?php 
-include 'layout/coon.php';
+include 'layout/coon.php'; session_start();
 
-
+if (  !empty($_SESSION["user"])) {  
+    header("Location: index.php", true);  
+  }
 $Admins_result = $conn->query("SELECT * FROM `admin` ORDER BY id ASC ");
 $AdminData = $Admins_result->fetchAll(PDO::FETCH_ASSOC);
 $num = count($AdminData);

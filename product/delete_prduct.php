@@ -1,5 +1,5 @@
 <?php
-include '../layout/coon.php';
+include '../layout/coon.php';session_start();
 
 if (isset($_GET["id"])) {
     $id = $_GET["id"];

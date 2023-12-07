@@ -1,4 +1,4 @@
-<?php include '../layout/coon.php';
+<?php include '../layout/coon.php';session_start();
 
  $id = $_GET["id"] ;
  $timee = date("Y/m/d H:i:s");
