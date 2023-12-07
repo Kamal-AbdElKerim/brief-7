@@ -1,7 +1,9 @@
 <?php 
-include 'layout/coon.php';
+include 'layout/coon.php'; session_start();
 
-
+if (  !empty($_SESSION["user"])) {  
+  header("Location: index.php", true);  
+}
 
 ?>
 

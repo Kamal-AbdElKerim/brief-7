@@ -1,7 +1,7 @@
 
 
 <?php 
-include 'layout/coon.php';
+include 'layout/coon.php'; session_start();
 
 $Admins_result = $conn->query("SELECT * FROM `admin` ORDER BY id ASC ");
 $AdminData = $Admins_result->fetchAll(PDO::FETCH_ASSOC);

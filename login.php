@@ -1,5 +1,5 @@
 
-<?php include 'layout/coon.php';
+<?php include 'layout/coon.php'; session_start();  
 $isActive = 'login.php';
 
 if (isset($_POST['sing_out'])) { 
